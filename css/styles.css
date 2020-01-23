@@ -14,14 +14,14 @@ h3 {
 
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url("./fonts/OpenSans-Regular.woff");
+  src: "./fonts/OpenSans-Regular.woff";
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OpenSans-Bold";
-  src: url("./fonts/OpenSans-Bold.woff");
+  src: "./fonts/OpenSans-Bold.woff";
   font-weight: 700;
   font-style: normal;
 }
@@ -31,7 +31,7 @@ h3 {
   width: 100%;
   box-sizing: border-box;
   padding: 33px 20px 84px;
-  background: url("./img/football_767.jpg")
+  background: "./img/football_767.jpg"
     no-repeat center center #0a0e34;
   background-size: cover;
   position: relative;
@@ -292,7 +292,7 @@ h3 {
   width: 100%;
   box-sizing: border-box;
   padding: 90px 20px 10px;
-  background: url("./img/game_767.jpg")
+  background: "./img/game_767.jpg"
     no-repeat center center #0a0e34;
   background-size: cover;
   position: relative;
