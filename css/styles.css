@@ -31,7 +31,7 @@ h3 {
   width: 100%;
   box-sizing: border-box;
   padding: 33px 20px 84px;
-  background: "./img/football_767.jpg"
+  background: url("./img/football_767.jpg")
     no-repeat center center #0a0e34;
   background-size: cover;
   position: relative;
@@ -292,7 +292,7 @@ h3 {
   width: 100%;
   box-sizing: border-box;
   padding: 90px 20px 10px;
-  background: "./img/game_767.jpg"
+  background: url("./img/game_767.jpg")
     no-repeat center center #0a0e34;
   background-size: cover;
   position: relative;
