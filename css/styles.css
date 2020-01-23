@@ -1,1 +1,388 @@
-﻿/* CSS */
+body,
+ul,
+li,
+p,
+a,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("https://github.com/Antis85/mq-diploma/blob/master/sources/fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("https://github.com/Antis85/mq-diploma/blob/master/sources/fonts/OpenSans-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+  
+@media (max-width: 640px) { 
+.top-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 33px 20px 84px;
+  background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/football_767.jpg")
+    no-repeat center center #0a0e34;
+  background-size: cover;
+  position: relative;
+}
+
+.top-container::after {
+  content: "";
+  background-color: #0a0e34;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  position: absolute;
+  z-index: 1;
+}
+
+.logo-text {
+  width: 133px;
+  height: 33px;
+  margin: 0 auto;
+  display: block;
+  fill: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-text:hover {
+  fill: #000000;
+}
+
+.header-slogan-top {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 28px;
+  color: #ffffff;
+  margin-top: 136px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.header-slogan-bottom {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 28px;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-left: 45px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.download-buttons {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.download-buttons-list-item:first-child {
+  margin-top: 90px;
+}
+
+.download-buttons-list-item:last-child {
+  margin-top: 15px;
+}
+
+.download-link {
+/*   width: 100%;
+  min-height: 35px;   */
+  padding-left: 80px;
+  display: flex;  
+  justify-content: left;
+  align-items: center;
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-size: 8px;
+  color: #ffffff;
+  text-transform: uppercase;  
+  box-sizing: border-box;
+  border: 1px solid #5e42b0;
+  border-radius: 17px;
+  background-color: #5e42b0;
+}
+
+.download-link-text {
+  display: flex;  
+  flex-direction: column;
+  margin-left: 10px;  
+}
+
+.download-link-text span:last-child {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+}
+
+.apple-logo,
+.google-logo {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.download-link:hover svg  {
+  fill: #000000;
+} 
+
+.middle-frame {
+  width: 100%;  
+}
+
+.cards-container-header {
+  padding-top: 25px;
+  padding-bottom: 245px;
+}
+
+.cards-container-title {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 50px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  padding-left: 20px;  
+}
+
+.frame-top-half-picture-box {
+  margin-top: 25px;
+  position: absolute;
+  z-index: 1;  
+}
+
+.picture-athletes {
+  left: 75px;
+}
+
+.picture-players {
+  left: 20px;
+}
+
+/* .frame-top-half-picture {
+  max-width: 100%;  
+} */
+
+.top-card {
+  padding: 83px 20px 54px;  
+  background-color: #fafafa;
+}
+
+.middle-card {
+  padding: 60px 20px 55px;
+  background-color: #f5f4f9;
+}
+
+.bottom-card {
+  padding: 60px 20px 57px; 
+  background-color: #5e42b0;
+}
+
+.bottom-card-players {
+  background-color: #090c35;
+  color: #8765dd;
+}
+
+.bottom-card p {
+  color: #ffffff;
+}
+
+.card-title-number {
+  position: relative;
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.card-title-number::after {
+  content: "";
+  width: 15px;
+  height: 4px;
+  box-sizing: border-box;
+  border: 1px solid #5e42b0;
+  border-radius: 1px;
+  background-color: #5e42b0;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 16px;
+}
+
+.bottom-card-title-number::after {
+  background-color: #ffffff;
+}
+
+.card-title-text {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 23px;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.card-text {
+  margin-top: 27px;
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* .post-box {
+  position: relative;
+} */
+
+.post-bottom-half-picture-box {
+  width: 100%;   
+}
+
+.post-bottom-half-picture {
+  max-width: 100%;
+}
+
+.post-box-text-container {
+  padding: 35px 20px 80px;
+  position: relative;
+}
+
+.post-title-number {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5e42b0;
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 14px;
+  color: #f5f6f7;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: -56px;
+  left: 20px;
+}
+
+.post-title-number::after {
+  content: "";
+  width: 15px;
+  height: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  border-radius: 1px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 15px/2);
+  top: 45px;
+}
+
+.post-title-text {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 28px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+}
+
+.post-text {
+  margin-top: 25px;
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.footer-container {  
+  width: 100%;
+  box-sizing: border-box;
+  padding: 90px 20px 10px;
+  background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/game_767.jpg")
+    no-repeat center center #0a0e34;
+  background-size: cover;
+  position: relative;
+}
+
+.footer-container::after {
+  content: "";
+  background-color: #0a0e34;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  position: absolute;
+  z-index: 1;
+}
+
+.artwork-logo {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  padding: 12px 6px 13px 7px;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #5e42b0;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    0deg,
+    #50329c 0%,
+    #5e3db3 51%,
+    #7751db 100%
+  );
+  fill: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.artwork-logo:hover {
+  fill: #000000;
+}
+
+.footer-slogan-top {
+  margin-top: 60px;
+  text-align: center;
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-slogan-bottom {
+  margin-top: 15px;
+  text-align: center;
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-size: 14px;
+  color: #9b8ec1;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.download-buttons-list-item:first-child {
+  margin-top: 75px;
+}
+
+.footer-logo-text {
+  width: 133px;
+  height: 33px;
+  margin: 0 auto;
+  display: block;
+    fill: #ffffff;
+  padding-top: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-logo-text:hover {
+  fill: #000000;
+}
+
+}
