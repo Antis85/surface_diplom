@@ -100,8 +100,6 @@ h3 {
 }
 
 .download-link {
-/*   width: 100%;
-  min-height: 35px;   */
   padding-left: 80px;
   display: flex;  
   justify-content: left;
@@ -168,10 +166,6 @@ h3 {
   left: 20px;
 }
 
-/* .frame-top-half-picture {
-  max-width: 100%;  
-} */
-
 .top-card {
   padding: 83px 20px 54px;  
   background-color: #fafafa;
@@ -235,10 +229,6 @@ h3 {
   font-family: "OpenSans-Regular", Arial, sans-serif;
   font-size: 15px;
 }
-
-/* .post-box {
-  position: relative;
-} */
 
 .post-bottom-half-picture-box {
   width: 100%;   
