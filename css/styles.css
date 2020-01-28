@@ -1,17 +1,3 @@
-body,
-ul,
-li,
-p,
-a,
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
-}
-
 @font-face {
   font-family: "OpenSans-Regular";
   src: url("../fonts/OpenSans-Regular.woff");
@@ -26,13 +12,34 @@ h3 {
   font-style: normal;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
+
 .top-container {
-  width: 100%;
   box-sizing: border-box;
-  padding: 33px 20px 84px;
-  background: url("../img/football_767.jpg")
-    no-repeat center center #0a0e34;
-  background-size: cover;
   position: relative;
 }
 
@@ -48,9 +55,23 @@ h3 {
   z-index: 1;
 }
 
+.header-title-visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.logo-link {
+  display: block;
+}
+
+.logo-link,
+.download-link {
+  text-decoration: none;
+}
+
 .logo-text {
-  width: 133px;
-  height: 33px;
   margin: 0 auto;
   display: block;
   fill: #ffffff;
@@ -63,21 +84,16 @@ h3 {
 }
 
 .header-slogan-top {
-  font-family: "OpenSans-Bold", Arial, sans-serif;
-  font-size: 28px;
+  font-weight: 700;
   color: #ffffff;
-  margin-top: 136px;
   text-transform: uppercase;
   position: relative;
   z-index: 2;
 }
 
 .header-slogan-bottom {
-  font-family: "OpenSans-Bold", Arial, sans-serif;
-  font-size: 28px;
+  font-weight: 700;
   color: #ffffff;
-  margin-top: 30px;
-  margin-left: 45px;
   text-transform: uppercase;
   position: relative;
   z-index: 2;
@@ -90,52 +106,40 @@ h3 {
 }
 
 .download-link {
-  width: 280px;
-  padding-left: 80px;
   display: flex;
   justify-content: left;
   align-items: center;
-  font-family: "OpenSans-Regular", Arial, sans-serif;
-  font-size: 8px;
   color: #ffffff;
   text-transform: uppercase;
   box-sizing: border-box;
   border: 1px solid #5e42b0;
-  border-radius: 17px;
   background-color: #5e42b0;
 }
 
 .download-link-text {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
 }
 
 .download-link-text span:last-child {
-  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: 700;
 }
 
 .apple-logo,
 .google-logo {
-  width: 24px;
-  height: 24px;
   fill: #ffffff;
 }
 
 .download-link:hover svg {
   fill: #000000;
 }
-
-.middle-frame {
-  width: 100%;
-}
-
+/* контент athlets-players*/
 .cards-container-header {
   position: relative;
 }
 
 .cards-container-title {
-  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: 700;
   color: #e7e7e7;
   text-transform: uppercase;
 }
@@ -143,6 +147,10 @@ h3 {
 .frame-top-half-picture-box {
   position: absolute;
   z-index: 1;
+}
+
+.frame-top-half-picture {
+  display: block;
 }
 
 .middle-card {
@@ -153,10 +161,15 @@ h3 {
   background-color: #5e42b0;
 }
 
+.card-header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
 .card-title-number {
   position: relative;
-  font-family: "OpenSans-Bold", Arial, sans-serif;
-  vertical-align: top;
+  font-weight: 700;
 }
 
 .card-title-number::after {
@@ -169,15 +182,11 @@ h3 {
 }
 
 .card-title-text {
-  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: 700;
   color: #c1c1c1;
   text-transform: uppercase;
   vertical-align: top;
-  margin-left: 10px;
-}
-
-.card-text {
-  font-family: "OpenSans-Regular", Arial, sans-serif;
+  margin-left: 10px; 
 }
 
 .bottom-card-players {
@@ -192,17 +201,19 @@ h3 {
 .bottom-card p {
   color: #ffffff;
 }
-
+/* контент be active-find contact-work it*/
 .post-bottom-half-picture-box {
   width: 100%;
 }
 
 .post-bottom-half-picture {
   max-width: 100%;
+  display: block;
 }
 
 .post-box-text-container {
   position: relative;
+  box-sizing: border-box;
 }
 
 .post-title-number {
@@ -210,7 +221,7 @@ h3 {
   justify-content: center;
   align-items: center;
   background-color: #5e42b0;
-  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: 700;
   color: #f5f6f7;
   text-align: center;
   position: absolute;
@@ -228,17 +239,13 @@ h3 {
 }
 
 .post-title-text {
-  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: 700;
   color: #e7e7e7;
   text-transform: uppercase;
 }
 
-.post-text {
-  font-family: "OpenSans-Regular", Arial, sans-serif;
-}
-
-.footer-container {
-  width: 100%;
+/* футер */
+.footer-container {  
   box-sizing: border-box;
   position: relative;
 }
@@ -253,6 +260,10 @@ h3 {
   opacity: 0.9;
   position: absolute;
   z-index: 1;
+}
+
+.artwork-logo-link {
+  display: block;
 }
 
 .artwork-logo {
@@ -277,7 +288,7 @@ h3 {
 
 .footer-slogan-top {
   text-align: center;
-  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   position: relative;
@@ -286,11 +297,14 @@ h3 {
 
 .footer-slogan-bottom {
   text-align: center;
-  font-family: "OpenSans-Regular", Arial, sans-serif;
   color: #9b8ec1;
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+}
+
+.footer-logo-link {
+  display: block;
 }
 
 .footer-logo-text {
@@ -306,6 +320,30 @@ h3 {
 }
 
 @media (max-width: 640px) {
+  /* шапка */
+  .top-container {
+    padding: 33px 20px 84px;
+    background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/football_767.jpg")
+      no-repeat center center #0a0e34;
+    background-size: cover;
+  }
+
+  .logo-text {
+    width: 133px;
+    height: 33px;
+  }
+
+  .header-slogan-top {
+    font-size: 28px;
+    margin-top: 136px;
+  }
+
+  .header-slogan-bottom {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-left: 45px;
+  }
+
   .download-buttons-list {
     width: 280px;
     margin: 0 auto;
@@ -313,16 +351,33 @@ h3 {
 
   .download-buttons-list-item:first-child {
     margin-top: 90px;
-  }
+  } /* только для @media (max-width: 640px) */
 
   .download-buttons-list-item:last-child {
     margin-top: 15px;
-  } 
+  } /* только для @media (max-width: 640px) */
 
+  .download-link {
+    width: 280px;
+    padding-left: 80px;
+    font-size: 8px;
+    border-radius: 17px;
+  }
+
+  .apple-logo,
+  .google-logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .download-link-text {
+    margin-left: 10px;
+  }
+  /* контент athlets-players */
   .cards-container-header {
     padding-top: 25px;
     padding-bottom: 245px;
-  } 
+  } /* только для @media (max-width: 640px) */
 
   .cards-container-title {
     font-size: 50px;
@@ -363,7 +418,7 @@ h3 {
     height: 4px;
     border-radius: 1px;
     left: 0;
-    top: 16px;
+    top: 18px;
   }
 
   .card-title-text {
@@ -374,7 +429,7 @@ h3 {
     margin-top: 27px;
     font-size: 15px;
   }
-
+  /* контент be active-find contact-work it*/
   .post-box-text-container {
     padding: 35px 20px 80px;
   }
@@ -442,6 +497,9 @@ h3 {
 @media (min-width: 641px) and (max-width: 960px) {
   .top-container {
     padding: 40px 25px 90px;
+    background: url("../img/football_1280.jpg")
+      no-repeat center center #0a0e34;
+    background-size: cover;
   }
 
   .logo-text {
@@ -463,7 +521,15 @@ h3 {
   .download-buttons-list {
     margin-top: 312px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+
+  .download-buttons-list-item:first-child {
+    margin-right: 15px;
+  }
+
+  .download-buttons-list-item:last-child {
+    margin-left: 15px;
   }
 
   .download-link {
@@ -540,7 +606,7 @@ h3 {
     height: 5px;
     border-radius: 2px;
     left: 0;
-    top: 21px;
+    top: 23px;
   }
 
   .card-title-text {
@@ -613,5 +679,224 @@ h3 {
     width: 205px;
     height: 56px;
     padding-top: 55px;
+  }
+} /* для media 641-960 */
+
+@media (min-width: 961px) {
+  .top-container {
+    padding: 45px 15px 110px;
+    background: url("../img/football_1920.jpg")
+      no-repeat center center #0a0e34;
+    background-size: cover;
+  }
+
+  .logo-text {
+    width: 191px;
+    height: 52px;
+  }
+
+  .header-slogan-top {
+    font-size: 90px;
+    margin-top: 296px;
+  }
+
+  .header-slogan-bottom {
+    font-size: 90px;
+    text-align: right;
+  }
+
+  .download-buttons-list {
+    margin-top: 223px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .download-buttons-list-item:first-child {
+    margin-right: 25px;
+  }
+
+  .download-buttons-list-item:last-child {
+    margin-left: 25px;
+  }
+
+  .download-link {
+    width: 311px;
+    font-size: 14px;
+    border-radius: 38px;
+    justify-content: center;
+    padding: 15px 0px;
+  }
+
+  .download-link-text {
+    margin-left: 28px;
+  }
+
+  .apple-logo,
+  .google-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cards-container-title {
+    font-size: 80px;
+    padding: 116px 15px 50px calc(50% + 50px);
+  }
+
+  .title-players {
+    padding: 118px 15px 50px 15px;
+  }
+
+  .picture-athletes {
+    right: 50%;
+    top: 27px;
+  }
+
+  .picture-players {
+    right: -60px;
+    top: 45px;
+  }
+
+  .top-card {
+    padding: 60px 15px 60px calc(50% + 50px);
+    background-color: #ffffff;
+  }
+
+  .top-card-players {
+    padding-left: 15px;
+    padding-right: 50%;
+  }
+
+  .middle-card {
+    padding: 60px 15px 60px calc(50% + 50px);
+  }
+
+  .middle-card-players {
+    padding-left: 15px;
+    padding-right: 50%;
+  }
+
+  .bottom-card {
+    padding: 60px 15px 60px calc(50% + 50px);
+  }
+
+  .bottom-card-players {
+    padding-left: 15px;
+    padding-right: 50%;
+  }
+
+  .card-title-number {
+    font-size: 18px;
+  }
+
+  .card-title-number::after {
+    width: 21px;
+    height: 5px;
+    border-radius: 2px;
+    left: 0;
+    top: 23px;
+  }
+
+  .card-title-text {
+    font-size: 36px;
+  }
+
+  .card-text {
+    margin-top: 35px;
+    font-size: 20px;
+  }
+
+  .post-box {
+    display: flex;
+  }
+
+  .post-bottom-half-picture-box {
+    width: 50%;
+  }
+
+  .post-box:nth-child(-2n + 2) .post-bottom-half-picture-box {
+    order: 1;
+  }
+
+  .post-box-text-container {
+    padding: 13.54% 15px 13.02% 6.77%; 
+    width: 50%;
+  }
+
+  .post-box:nth-child(-2n + 2) .post-box-text-container {
+    padding: 13.54% 6.77% 13.02% 15px; 
+  }
+
+  .post-title-number {
+    width: 168px;
+    height: 155px;
+    font-size: 24px;
+    top: 77.5px;
+    left: -84px;
+  }
+
+  .post-title-number::after {
+    width: 28px;
+    height: 5px;
+    border-radius: 2px;
+    left: calc(50% - 28px / 2);
+    top: 95px;
+  }
+
+  .post-box:nth-child(-2n + 2) .post-title-number {
+    left: calc(100% - 84px);
+  }
+
+  .post-title-text {
+    font-size: 80px;
+  }
+
+  .post-text {
+    margin-top: 6.41%; /* 123px */
+    font-size: 24px;
+  }
+
+  .footer-container {
+    padding: 230px 15px 50px;
+    background: url("../img/game_1920.jpg")
+      no-repeat center center #0a0e34;
+    background-size: cover;
+  }
+
+  .footer-logo-slogan-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .artwork-logo {
+    width: 130px;
+    height: 137px;
+    padding: 24px 12px 28px 13px;
+    border-radius: 25px;
+  }
+
+  .footer-slogan-wrapper {
+    margin-left: 37px;
+  }
+
+  .footer-slogan-top {
+    font-size: 80px;
+    text-align: left;
+  }
+
+  .footer-slogan-bottom {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .footer-buttons-list {
+    margin-top: 150px;
+  }
+
+  .footer-logo-text {
+    width: 191px;
+    height: 52px;
+    padding-top: 260px;
   }
 } 
