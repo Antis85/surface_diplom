@@ -135,9 +135,7 @@ a {
 }
 
 .download-link:hover svg {
-  fill: #000000;
-  background-color: white;    
-  border-radius: 15px;
+  fill: #000000;  
 }
 
 .cards-container-header {
