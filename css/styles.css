@@ -64,6 +64,7 @@ a {
 
 .logo-link {
   display: block;
+  margin: 0 auto;
 }
 
 .logo-link,
@@ -72,7 +73,8 @@ a {
 }
 
 .logo-text {
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   display: block;
   fill: #ffffff;
   position: relative;
@@ -81,6 +83,8 @@ a {
 
 .logo-text:hover {
   fill: #000000;
+  background-color: white;    
+  border-radius: 15px;
 }
 
 .header-slogan-top {
@@ -132,8 +136,10 @@ a {
 
 .download-link:hover svg {
   fill: #000000;
+  background-color: white;    
+  border-radius: 15px;
 }
-/* контент athlets-players*/
+
 .cards-container-header {
   position: relative;
 }
@@ -201,7 +207,7 @@ a {
 .bottom-card p {
   color: #ffffff;
 }
-/* контент be active-find contact-work it*/
+
 .post-bottom-half-picture-box {
   width: 100%;
 }
@@ -244,8 +250,8 @@ a {
   text-transform: uppercase;
 }
 
-/* футер */
-.footer-container {  
+
+.footer-container {
   box-sizing: border-box;
   position: relative;
 }
@@ -264,10 +270,12 @@ a {
 
 .artwork-logo-link {
   display: block;
+  margin: 0 auto;
 }
 
 .artwork-logo {
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   display: block;
   box-sizing: border-box;
   border: 1px solid #5e42b0;
@@ -305,10 +313,12 @@ a {
 
 .footer-logo-link {
   display: block;
+  margin: 0 auto;
 }
 
 .footer-logo-text {
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   display: block;
   fill: #ffffff;
   position: relative;
@@ -317,30 +327,37 @@ a {
 
 .footer-logo-text:hover {
   fill: #000000;
+  background-color: white;    
+  border-radius: 15px;
 }
 
 @media (max-width: 640px) {
-  /* шапка */
+  
   .top-container {
     padding: 33px 20px 84px;
-    background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/football_767.jpg")
+    background: url("../img/football_767.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
   }
-
-  .logo-text {
+  .logo-link {
     width: 133px;
     height: 33px;
   }
 
+  .header-slogan-text {
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .header-slogan-top {
     font-size: 28px;
-    margin-top: 136px;
+    margin-top: 131px;
   }
 
   .header-slogan-bottom {
     font-size: 28px;
-    margin-top: 30px;
+    margin-top: 9px;
     margin-left: 45px;
   }
 
@@ -350,12 +367,12 @@ a {
   }
 
   .download-buttons-list-item:first-child {
-    margin-top: 90px;
-  } /* только для @media (max-width: 640px) */
+    margin-top: 84px;
+  } 
 
   .download-buttons-list-item:last-child {
     margin-top: 15px;
-  } /* только для @media (max-width: 640px) */
+  }
 
   .download-link {
     width: 280px;
@@ -373,11 +390,11 @@ a {
   .download-link-text {
     margin-left: 10px;
   }
-  /* контент athlets-players */
+ 
   .cards-container-header {
-    padding-top: 25px;
-    padding-bottom: 245px;
-  } /* только для @media (max-width: 640px) */
+    padding-top: 16px;
+    padding-bottom: 236px;
+  } 
 
   .cards-container-title {
     font-size: 50px;
@@ -385,32 +402,33 @@ a {
   }
 
   .frame-top-half-picture-box {
-    margin-top: 25px;
+    margin-top: 16px;
   }
 
   .picture-athletes {
-    left: 75px;
+    left: calc (50% - 192px/2);
   }
 
   .picture-players {
-    left: 20px;
+    left: calc (50% - 302px/2);
   }
 
   .top-card {
-    padding: 83px 20px 54px;
+    padding: 79px 20px 51px;
     background-color: #fafafa;
   }
 
   .middle-card {
-    padding: 60px 20px 55px;
+    padding: 56px 20px 53px;
   }
 
   .bottom-card {
-    padding: 60px 20px 57px;
+    padding: 56px 20px 55px;
   }
 
   .card-title-number {
     font-size: 14px;
+    padding-bottom: 5px;
   }
 
   .card-title-number::after {
@@ -418,20 +436,20 @@ a {
     height: 4px;
     border-radius: 1px;
     left: 0;
-    top: 18px;
+    top: 19px;
   }
 
   .card-title-text {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .card-text {
     margin-top: 27px;
     font-size: 15px;
   }
-  /* контент be active-find contact-work it*/
+  
   .post-box-text-container {
-    padding: 35px 20px 80px;
+    padding: 30px 20px 77px;
   }
 
   .post-title-number {
@@ -440,6 +458,8 @@ a {
     font-size: 14px;
     top: -56px;
     left: 20px;
+    padding-bottom: 7px;
+    box-sizing: border-box;
   }
 
   .post-title-number::after {
@@ -447,7 +467,7 @@ a {
     height: 4px;
     border-radius: 1px;
     left: calc(50% - 15px / 2);
-    top: 45px;
+    top: calc(50% + 0.5em);
   }
 
   .post-title-text {
@@ -455,7 +475,7 @@ a {
   }
 
   .post-text {
-    margin-top: 25px;
+    margin-top: 17px;
     font-size: 16px;
   }
 
@@ -466,33 +486,36 @@ a {
     background-size: cover;
   }
 
-  .artwork-logo {
+  .artwork-logo-link {
     width: 72px;
     height: 74px;
+  }
+
+  .artwork-logo {
     padding: 12px 6px 13px 7px;
     border-radius: 10px;
   }
 
   .footer-slogan-top {
-    margin-top: 60px;
+    margin-top: 54px;
     font-size: 32px;
   }
 
   .footer-slogan-bottom {
-    margin-top: 15px;
+    margin-top: 4px;
     font-size: 14px;
   }
 
-  .footer-button-top {
-    margin-top: 75px;
+  ul.footer-buttons-list .footer-button-top {
+    margin-top: 73px;
   }
 
-  .footer-logo-text {
+  .footer-logo-link {
     width: 133px;
     height: 33px;
     padding-top: 80px;
   }
-} /*для @media max 640 */
+} 
 
 @media (min-width: 641px) and (max-width: 960px) {
   .top-container {
@@ -502,14 +525,14 @@ a {
     background-size: cover;
   }
 
-  .logo-text {
+  .logo-link {
     width: 205px;
     height: 56px;
   }
 
   .header-slogan-top {
     font-size: 64px;
-    margin-top: 180px;
+    margin-top: 170px;
     margin-left: 60px;
   }
 
@@ -519,7 +542,7 @@ a {
   }
 
   .download-buttons-list {
-    margin-top: 312px;
+    margin-top: 300px;
     display: flex;
     justify-content: center;
   }
@@ -552,11 +575,11 @@ a {
 
   .cards-container-title {
     font-size: 80px;
-    padding: 85px 25px 20px 290px;
+    padding: 72px 25px 8px 290px;
   }
 
   .title-players {
-    padding: 85px 25px 20px 25px;
+    padding: 72px 25px 8px 25px;
   }
 
   .picture-athletes {
@@ -570,7 +593,7 @@ a {
   }
 
   .top-card {
-    padding: 40px 25px 40px 290px;
+    padding: 34px 25px 37px 290px;
     background-color: #ffffff;
   }
 
@@ -580,7 +603,7 @@ a {
   }
 
   .middle-card {
-    padding: 40px 25px 40px 290px;
+    padding: 34px 25px 37px 290px;
   }
 
   .middle-card-players {
@@ -589,7 +612,7 @@ a {
   }
 
   .bottom-card {
-    padding: 40px 25px 40px 290px;
+    padding: 34px 25px 37px 290px;
   }
 
   .bottom-card-players {
@@ -599,6 +622,7 @@ a {
 
   .card-title-number {
     font-size: 18px;
+    padding-bottom: 8px;
   }
 
   .card-title-number::after {
@@ -606,7 +630,7 @@ a {
     height: 5px;
     border-radius: 2px;
     left: 0;
-    top: 23px;
+    top: 25px;
   }
 
   .card-title-text {
@@ -614,12 +638,12 @@ a {
   }
 
   .card-text {
-    margin-top: 35px;
+    margin-top: 26px;
     font-size: 16px;
   }
 
   .post-box-text-container {
-    padding: 90px 25px 105px;
+    padding: 77px 25px 99px;
   }
 
   .post-title-number {
@@ -643,7 +667,7 @@ a {
   }
 
   .post-text {
-    margin-top: 45px;
+    margin-top: 24px;
     font-size: 24px;
   }
 
@@ -654,33 +678,36 @@ a {
     background-size: cover;
   }
 
-  .artwork-logo {
+  .artwork-logo-link {
     width: 130px;
     height: 137px;
+  }
+
+  .artwork-logo {
     padding: 24px 12px 28px 13px;
     border-radius: 25px;
   }
 
   .footer-slogan-top {
-    margin-top: 80px;
+    margin-top: 68px;
     font-size: 80px;
   }
 
   .footer-slogan-bottom {
-    margin-top: 28px;
+    margin-top: 6px;
     font-size: 36px;
   }
 
   .footer-buttons-list {
-    margin-top: 290px;
+    margin-top: 282px;
   }
 
-  .footer-logo-text {
+  .footer-logo-link {
     width: 205px;
     height: 56px;
     padding-top: 55px;
   }
-} /* для media 641-960 */
+}
 
 @media (min-width: 961px) {
   .top-container {
@@ -690,14 +717,14 @@ a {
     background-size: cover;
   }
 
-  .logo-text {
+  .logo-link {
     width: 191px;
     height: 52px;
   }
 
   .header-slogan-top {
     font-size: 90px;
-    margin-top: 296px;
+    margin-top: 280px;
   }
 
   .header-slogan-bottom {
@@ -706,7 +733,7 @@ a {
   }
 
   .download-buttons-list {
-    margin-top: 223px;
+    margin-top: 207px;
     display: flex;
     justify-content: center;
   }
@@ -739,11 +766,11 @@ a {
 
   .cards-container-title {
     font-size: 80px;
-    padding: 116px 15px 50px calc(50% + 50px);
+    padding: 102px 15px 35px calc(50% + 50px);
   }
 
   .title-players {
-    padding: 118px 15px 50px 15px;
+    padding: 104px 15px 35px 15px;
   }
 
   .picture-athletes {
@@ -752,12 +779,12 @@ a {
   }
 
   .picture-players {
-    right: -60px;
+    right: 0px;
     top: 45px;
   }
 
   .top-card {
-    padding: 60px 15px 60px calc(50% + 50px);
+    padding: 54px 15px 56px calc(50% + 50px);
     background-color: #ffffff;
   }
 
@@ -767,7 +794,7 @@ a {
   }
 
   .middle-card {
-    padding: 60px 15px 60px calc(50% + 50px);
+    padding: 54px 15px 56px calc(50% + 50px);
   }
 
   .middle-card-players {
@@ -776,7 +803,7 @@ a {
   }
 
   .bottom-card {
-    padding: 60px 15px 60px calc(50% + 50px);
+    padding: 54px 15px 56px calc(50% + 50px);
   }
 
   .bottom-card-players {
@@ -786,6 +813,7 @@ a {
 
   .card-title-number {
     font-size: 18px;
+    padding-bottom: 11px;
   }
 
   .card-title-number::after {
@@ -793,7 +821,7 @@ a {
     height: 5px;
     border-radius: 2px;
     left: 0;
-    top: 23px;
+    top: 27px;
   }
 
   .card-title-text {
@@ -801,7 +829,7 @@ a {
   }
 
   .card-text {
-    margin-top: 35px;
+    margin-top: 24px;
     font-size: 20px;
   }
 
@@ -818,12 +846,12 @@ a {
   }
 
   .post-box-text-container {
-    padding: 13.54% 15px 13.02% 6.77%; 
+    padding: 12.81% 15px 11.46% 6.77%; 
     width: 50%;
   }
 
   .post-box:nth-child(-2n + 2) .post-box-text-container {
-    padding: 13.54% 6.77% 13.02% 15px; 
+    padding: 12.81% 6.77% 11.46% 15px; 
   }
 
   .post-title-number {
@@ -851,12 +879,12 @@ a {
   }
 
   .post-text {
-    margin-top: 6.41%; /* 123px */
+    margin-top: 6.41%; 
     font-size: 24px;
   }
 
   .footer-container {
-    padding: 230px 15px 50px;
+    padding: 220px 15px 50px;
     background: url("../img/game_1920.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
@@ -869,9 +897,12 @@ a {
     align-items: center;
   }
 
-  .artwork-logo {
+  .artwork-logo-link {
     width: 130px;
     height: 137px;
+  }
+
+  .artwork-logo {
     padding: 24px 12px 28px 13px;
     border-radius: 25px;
   }
@@ -891,10 +922,10 @@ a {
   }
 
   .footer-buttons-list {
-    margin-top: 150px;
+    margin-top: 140px;
   }
 
-  .footer-logo-text {
+  .footer-logo-link {
     width: 191px;
     height: 52px;
     padding-top: 260px;
