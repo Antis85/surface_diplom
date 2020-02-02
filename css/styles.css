@@ -406,11 +406,11 @@ a {
   }
 
   .picture-athletes {
-    left: calc (50% - 192px/2);
+    left: calc(50% - 192px/2);
   }
 
   .picture-players {
-    left: calc (50% - 302px/2);
+    left: calc(50% - 302px/2);
   }
 
   .top-card {
