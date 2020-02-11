@@ -980,6 +980,10 @@ a {
     right: 125px;
   }
 
+  .bottom-half {
+    max-width: 1920px; 
+  }
+  
   .post-box:nth-child(-n+1) .post-box-text-container {
     padding: 12.81% calc(50% - 780px) 12.58% 6.77%;    
   }
