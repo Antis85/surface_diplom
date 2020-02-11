@@ -6,15 +6,14 @@
 }
 
 @font-face {
-  font-family: "OpenSans-Bold";
+  font-family: "OpenSans-Regular";
   src: url("../fonts/OpenSans-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0;  
   font-family: "OpenSans-Regular", Arial, sans-serif;
 }
 
@@ -81,11 +80,11 @@ a {
   z-index: 2;
 }
 
-.logo-text:hover {
+/* .logo-text:hover {
   fill: #000000;
   background-color: white;    
   border-radius: 15px;
-}
+} */
 
 .header-slogan-top {
   font-weight: 700;
