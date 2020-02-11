@@ -956,16 +956,16 @@ a {
   
    .cards-container-title, .top-card, .middle-card, .bottom-card {
     padding-left: calc(50% + 50px);
-    padding-right: calc(50% - 780px);
+    padding-right: calc(50% - 765px);
   }
 
   .title-players, .top-card-players, .middle-card-players, .bottom-card-players {
-    padding-left: calc(50% - 780px);
+    padding-left: calc(50% - 765px);
     padding-right: calc(50% + 50px);
   }
 
   .picture-players {
-    right: 125px;
+    left: calc(50% - 200px);
   }
 
   .bottom-half {
@@ -974,15 +974,15 @@ a {
   }
   
   .post-box:nth-child(-n+1) .post-box-text-container {
-    padding: 12.81% calc(50% - 780px) 12.58% 6.77%;    
+    padding: 12.81% calc(50% - 765px) 12.58% 6.77%;    
   }
 
   .post-box:nth-child(-2n+2) .post-box-text-container {
-    padding: 12.81% 6.77% 14.71% calc(50% - 780px); 
+    padding: 12.81% 6.77% 14.71% calc(50% - 765px); 
   }
   
   .post-box:nth-child(-3n+3) .post-box-text-container {
-    padding: 12.81% calc(50% - 780px) 11.44% 6.77%;    
+    padding: 12.81% calc(50% - 765px) 11.44% 6.77%;    
   }
 
   .post-title-number {
