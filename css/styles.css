@@ -981,7 +981,8 @@ a {
   }
 
   .bottom-half {
-    max-width: 1920px; 
+    max-width: 1920px;
+    margin: 0 auto;
   }
   
   .post-box:nth-child(-n+1) .post-box-text-container {
