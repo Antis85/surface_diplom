@@ -671,31 +671,37 @@ a {
   }
   
   .post-box:nth-child(-n+1) .post-box-text-container {
-    padding: 77px 25px 99px;    
+    padding: 63px 31px 91px;    
   }
 
   .post-box:nth-child(-2n+2) .post-box-text-container {
-    padding: 77px 25px 99px; 
+    padding: 52px 33px 99px; 
   }
   
   .post-box:nth-child(-3n+3) .post-box-text-container {
-    padding: 77px 25px 99px;    
+    padding: 53px 33px 133px;    
   }
 
+  .post-box:nth-child(-n+1) .post-title-number {
+    top: -80px; 
+  }
+  
   .post-title-number {
     width: 116px;
     height: 116px;
+    box-sizing: border-box;
     font-size: 24px;
-    top: -85px;
-    left: 25px;
+    top: -90px;
+    left: 33px;
+    padding-bottom: 12px;
   }
-
+  
   .post-title-number::after {
     width: 28px;
     height: 5px;
     border-radius: 2px;
     left: calc(50% - 28px / 2);
-    top: 75px;
+    top: 71px;
   }
 
   .post-title-text {
@@ -703,12 +709,12 @@ a {
   }
 
   .post-text {
-    margin-top: 24px;
+    margin-top: 9px;
     font-size: 24px;
   }
 
   .footer-container {
-    padding: 125px 25px 25px;
+    padding: 125px 25px 23px;
     background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/game_1280.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
@@ -725,17 +731,17 @@ a {
   }
 
   .footer-slogan-top {
-    margin-top: 68px;
+    margin-top: 55px;
     font-size: 80px;
   }
 
   .footer-slogan-bottom {
-    margin-top: 6px;
+    margin-top: -6px;
     font-size: 36px;
   }
 
   .footer-buttons-list {
-    margin-top: 282px;
+    margin-top: 278px;
   }
 
   .footer-logo-link {
@@ -744,7 +750,6 @@ a {
     padding-top: 55px;
   }
 } 
-
 
 @media (min-width: 961px) {
   .top-container {
