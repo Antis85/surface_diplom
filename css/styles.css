@@ -550,7 +550,7 @@ a {
 
 @media (min-width: 641px) and (max-width: 960px) {
   .top-container {
-    padding: 40px 25px 90px;
+    padding: 40px 25px 91px;
     background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/football_1280.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
@@ -563,17 +563,18 @@ a {
 
   .header-slogan-top {
     font-size: 64px;
-    margin-top: 170px;
+    margin-top: 168px;
     margin-left: 60px;
   }
 
   .header-slogan-bottom {
     font-size: 64px;
+    line-height: 1.15;
     margin-left: 165px;
   }
 
   .download-buttons-list {
-    margin-top: 300px;
+    margin-top: 302px;
     display: flex;
     justify-content: center;
   }
@@ -605,49 +606,46 @@ a {
 
   .cards-container-title {
     font-size: 80px;
-    padding: 72px 25px 8px 290px;
+    padding: 58px 25px 8px 292px;
   }
 
   .title-players {
-    padding: 72px 25px 8px 25px;
+    padding: 58px 25px 8px 27px;
   }
 
   .picture-athletes {
-    left: -165px;
-    top: 110px;
+    left: -162px;
+    top: 94px;
   }
 
   .picture-players {
     right: 0px;
-    top: 45px;
+    top: 39px;
   }
 
   .top-card {
-    padding: 34px 25px 37px 290px;
+    padding: 18px 25px 42px 292px;
     background-color: #ffffff;
   }
 
   .top-card-players {
-    padding-left: 25px;
-    padding-right: 325px;
+    padding: 18px 325px 48px 32px;    
   }
 
   .middle-card {
-    padding: 34px 25px 37px 290px;
+    padding: 30px 25px 55px 292px;
   }
 
   .middle-card-players {
-    padding-left: 25px;
-    padding-right: 325px;
+    padding: 31px 325px 43px 32px;   
   }
 
   .bottom-card {
-    padding: 34px 25px 37px 290px;
+    padding: 29px 25px 41px 292px;
   }
 
   .bottom-card-players {
-    padding-left: 25px;
-    padding-right: 325px;
+    padding: 30px 325px 63px 32px;
   }
 
   .card-title-number {
@@ -668,12 +666,20 @@ a {
   }
 
   .card-text {
-    margin-top: 26px;
+    margin-top: 21px;
     font-size: 16px;
   }
+  
+  .post-box:nth-child(-n+1) .post-box-text-container {
+    padding: 77px 25px 99px;    
+  }
 
-  .post-box-text-container {
-    padding: 77px 25px 99px;
+  .post-box:nth-child(-2n+2) .post-box-text-container {
+    padding: 77px 25px 99px; 
+  }
+  
+  .post-box:nth-child(-3n+3) .post-box-text-container {
+    padding: 77px 25px 99px;    
   }
 
   .post-title-number {
@@ -738,6 +744,7 @@ a {
     padding-top: 55px;
   }
 } 
+
 
 @media (min-width: 961px) {
   .top-container {
