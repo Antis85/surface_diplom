@@ -425,6 +425,18 @@ a {
     padding: 53px 20px 66px;
   }
 
+   .top-card-players {
+    padding: 76px 20px 51px;    
+  }
+
+  .middle-card-players {
+    padding: 50px 20px 60px;
+  }
+
+  .bottom-card-players {
+    padding: 53px 20px 66px;
+  }
+  
   .card-title-number {
     font-size: 14px;
     padding-bottom: 5px;
