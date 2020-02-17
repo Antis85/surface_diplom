@@ -794,6 +794,7 @@ a {
 
   .download-link {
     width: 311px;
+    height: 77px;
     font-size: 14px;
     border-radius: 38px;
     justify-content: center;
@@ -835,19 +836,19 @@ a {
   }
 
   .top-card-players {
-    padding: 39px 50% 56px 15px;
+    padding: 43px 50% 56px 15px;
   }
 
   .middle-card {
-    padding: 50px 15px 61px calc(50% + 50px);
+    padding: 45px 15px 57px calc(50% + 50px);
   }
 
   .middle-card-players {
-    padding: 50px 50% 61px 15px;
+    padding: 49px 50% 88px 15px;
   }
 
   .bottom-card {
-    padding: 50px 15px 56px calc(50% + 50px);
+    padding: 47px 15px 56px calc(50% + 50px);
   }
 
   .bottom-card-players {
@@ -872,7 +873,7 @@ a {
   }
 
   .card-text {
-    margin-top: 24px;
+    margin-top: 15px;
     font-size: 20px;
   }
 
@@ -945,7 +946,7 @@ a {
   }
 
   .footer-container {
-    padding: 220px 15px 50px;
+    padding: 226px 15px 55px;
     background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/game_1920.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
@@ -969,12 +970,14 @@ a {
   }
 
   .footer-slogan-wrapper {
-    margin-left: 37px;
+    margin-left: 32px;
+    line-height: 1;
   }
 
   .footer-slogan-top {
     font-size: 80px;
     text-align: left;
+    letter-spacing: 4px;
   }
 
   .footer-slogan-bottom {
@@ -983,32 +986,36 @@ a {
   }
 
   .footer-buttons-list {
-    margin-top: 140px;
+    margin-top: 152px;
   }
 
   .footer-logo-link {
     width: 191px;
     height: 52px;
-    padding-top: 260px;
+    padding-top: 262px;
   }
 }
 
-
 @media (min-width: 1600px) {
-  
   .header-slogan-text {
     width: 1530px;
     margin-left: auto;
     margin-right: auto;
   }
-  
-   .cards-container-title, .top-card, .middle-card, .bottom-card {
+
+  .cards-container-title,
+  .top-card,
+  .middle-card,
+  .bottom-card {
     padding-left: calc(50% + 50px);
-    padding-right: calc(50% - 780px);
+    padding-right: calc(50% - 768px);
   }
 
-  .title-players, .top-card-players, .middle-card-players, .bottom-card-players {
-    padding-left: calc(50% - 780px);
+  .title-players,
+  .top-card-players,
+  .middle-card-players,
+  .bottom-card-players {
+    padding-left: calc(50% - 768px);
     padding-right: calc(50% + 50px);
   }
 
@@ -1020,26 +1027,26 @@ a {
     max-width: 1920px;
     margin: 0 auto;
   }
-  
-  .post-box:nth-child(-n+1) .post-box-text-container {
-    padding: 12.81% calc(50% - 780px) 12.58% 6.77%;    
+
+  .post-box:nth-child(-n + 1) .post-box-text-container {
+    padding: 12.81% calc(50% - 768px) 12.3% 6.77%;
   }
 
-  .post-box:nth-child(-2n+2) .post-box-text-container {
-    padding: 12.81% 6.77% 14.71% calc(50% - 780px); 
+  .post-box:nth-child(-2n + 2) .post-box-text-container {
+    padding: 12.81% 6.77% 14.4% calc(50% - 768px);
   }
-  
-  .post-box:nth-child(-3n+3) .post-box-text-container {
-    padding: 12.81% calc(50% - 780px) 11.44% 6.77%;    
+
+  .post-box:nth-child(-3n + 3) .post-box-text-container {
+    padding: 12.81% calc(50% - 768px) 11% 6.77%;
   }
 
   .post-title-number {
     width: 168px;
     height: 155px;
     font-size: 24px;
-    top: calc(2*12.81% + 0.75em);
+    top: calc(2 * 12.81% + 0.75em);
     left: -84px;
-  } 
+  }
 
   .post-title-number::after {
     width: 28px;
@@ -1049,26 +1056,26 @@ a {
     top: 95px;
   }
 
-   .post-box:nth-child(-2n + 2) .post-title-number {
+  .post-box:nth-child(-2n + 2) .post-title-number {
     left: calc(100% - 84px);
   }
 
-   .post-title-text {
+  .post-title-text {
     font-size: 80px;
   }
-  
-   .post-box:nth-child(-n+1) .post-text {
-    margin-top: 5.43%; /* 123-14.4-4.4px */    
-  } 
-  
-   .post-box:nth-child(-2n+2) .post-text {
-    margin-top: 3.29%; /* 82-14.4-4.4px */    
-  } 
-  
-   .post-box:nth-child(-3n+3) .post-text {
-    margin-top: 4.96%; /* 114-14.4-4.4px */    
-  } 
-  
+
+  .post-box:nth-child(-n + 1) .post-text {
+    margin-top: 11.3%; 
+  }
+
+  .post-box:nth-child(-2n + 2) .post-text {
+    margin-top: 5%; 
+  }
+
+  .post-box:nth-child(-3n + 3) .post-text {
+    margin-top: 10.4%; 
+  }
 }
+
 
 
