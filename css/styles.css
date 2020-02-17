@@ -80,6 +80,12 @@ a {
   z-index: 2;
 }
 
+/* .logo-text:hover {
+  fill: #000000;
+  background-color: white;    
+  border-radius: 15px;
+} */
+
 .header-slogan-top {
   font-weight: 700;
   color: #ffffff;
@@ -183,7 +189,7 @@ a {
   color: #c1c1c1;
   text-transform: uppercase;
   vertical-align: top;
-  margin-left: 10px; 
+  margin-left: 10px; /* margin один для всех макетов */
 }
 
 .bottom-card-players {
@@ -243,6 +249,7 @@ a {
 
 /* футер */
 .footer-container {
+  /*   width: 100%; */
   box-sizing: border-box;
   position: relative;
 }
@@ -316,33 +323,39 @@ a {
   z-index: 2;
 }
 
+/* .footer-logo-text:hover {
+  fill: #000000;
+  background-color: white;    
+  border-radius: 15px;
+} */
+
 @media (max-width: 640px) {
   /* шапка */
   .top-container {
     padding: 33px 20px 84px;
-    background: url("../img/football_767.jpg")
+    background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/football_767.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
   }
   .logo-link {
     width: 133px;
-    height: 33px;
+    height: 36px;
   }
 
   .header-slogan-text {
-    width: 87.5%;
+/*     width: 87.5%; */
     margin-left: auto;
     margin-right: auto;
   }
 
   .header-slogan-top {
     font-size: 28px;
-    margin-top: 131px;
+    margin-top: 126px;
   }
 
   .header-slogan-bottom {
     font-size: 28px;
-    margin-top: 9px;
+    margin-top: 12px;
     margin-left: 45px;
   }
 
@@ -352,15 +365,16 @@ a {
   }
 
   .download-buttons-list-item:first-child {
-    margin-top: 84px;
-  } 
+    margin-top: 78px;
+  } /* только для @media (max-width: 640px) */
 
   .download-buttons-list-item:last-child {
     margin-top: 15px;
-  } 
+  } /* только для @media (max-width: 640px) */
 
   .download-link {
     width: 280px;
+    height: 35px;
     padding-left: 80px;
     font-size: 8px;
     border-radius: 17px;
@@ -377,9 +391,9 @@ a {
   }
   /* контент athlets-players */
   .cards-container-header {
-    padding-top: 16px;
-    padding-bottom: 236px;
-  } 
+    padding-top: 7px;
+    padding-bottom: 230px;
+  } /* только для @media (max-width: 640px) */
 
   .cards-container-title {
     font-size: 50px;
@@ -387,7 +401,7 @@ a {
   }
 
   .frame-top-half-picture-box {
-    margin-top: 16px;
+    margin-top: 5px;
   }
 
   .picture-athletes {
@@ -399,16 +413,16 @@ a {
   }
 
   .top-card {
-    padding: 79px 20px 51px;
+    padding: 76px 20px 51px;
     background-color: #fafafa;
   }
 
   .middle-card {
-    padding: 56px 20px 53px;
+    padding: 50px 20px 60px;
   }
 
   .bottom-card {
-    padding: 56px 20px 55px;
+    padding: 53px 20px 66px;
   }
 
   .card-title-number {
@@ -425,11 +439,11 @@ a {
   }
 
   .card-title-text {
-    font-size: 20px;
+    font-size: 23px;
   }
 
   .card-text {
-    margin-top: 27px;
+    margin-top: 18px;
     font-size: 15px;
   }
   /* контент be active-find contact-work it*/
@@ -465,8 +479,8 @@ a {
   }
 
   .footer-container {
-    padding: 90px 20px 10px;
-    background: url("../img/game_767.jpg")
+    padding: 99px 20px 10px;
+    background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/game_767.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
   }
@@ -478,21 +492,21 @@ a {
 
   .artwork-logo {
     padding: 12px 6px 13px 7px;
-    border-radius: 10px;
+    border-radius: 15px;
   }
 
   .footer-slogan-top {
-    margin-top: 54px;
+    margin-top: 48px;
     font-size: 32px;
   }
 
   .footer-slogan-bottom {
-    margin-top: 4px;
+    margin-top: -1px;
     font-size: 14px;
   }
 
   ul.footer-buttons-list .footer-button-top {
-    margin-top: 73px;
+    margin-top: 72px;
   }
 
   .footer-logo-link {
@@ -517,7 +531,7 @@ a {
 @media (min-width: 641px) and (max-width: 960px) {
   .top-container {
     padding: 40px 25px 90px;
-    background: url("../img/football_1280.jpg")
+    background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/football_1280.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
   }
@@ -669,7 +683,7 @@ a {
 
   .footer-container {
     padding: 125px 25px 25px;
-    background: url("../img/game_1280.jpg")
+    background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/game_1280.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
   }
@@ -708,7 +722,7 @@ a {
 @media (min-width: 961px) {
   .top-container {
     padding: 45px 15px 110px;
-    background: url("../img/football_1920.jpg")
+    background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/football_1920.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
   }
@@ -885,21 +899,21 @@ a {
     font-size: 24px;
   }
   
-  .post-box:nth-child(-n+1) .post-text {
+     .post-box:nth-child(-n+1) .post-text {
     margin-top: calc(5.43%/2);     
   } 
   
-  .post-box:nth-child(-2n+2) .post-text {
+   .post-box:nth-child(-2n+2) .post-text {
     margin-top: calc(3.29%/2);    
   } 
   
-  .post-box:nth-child(-3n+3) .post-text {
+   .post-box:nth-child(-3n+3) .post-text {
     margin-top: calc(4.96%/2);     
   } 
 
   .footer-container {
     padding: 220px 15px 50px;
-    background: url("../img/game_1920.jpg")
+    background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/game_1920.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
   }
@@ -956,16 +970,16 @@ a {
   
    .cards-container-title, .top-card, .middle-card, .bottom-card {
     padding-left: calc(50% + 50px);
-    padding-right: calc(50% - 765px);
+    padding-right: calc(50% - 780px);
   }
 
   .title-players, .top-card-players, .middle-card-players, .bottom-card-players {
-    padding-left: calc(50% - 765px);
+    padding-left: calc(50% - 780px);
     padding-right: calc(50% + 50px);
   }
 
   .picture-players {
-    left: calc(50% - 200px);
+    right: 125px;
   }
 
   .bottom-half {
@@ -974,15 +988,15 @@ a {
   }
   
   .post-box:nth-child(-n+1) .post-box-text-container {
-    padding: 12.81% calc(50% - 765px) 12.58% 6.77%;    
+    padding: 12.81% calc(50% - 780px) 12.58% 6.77%;    
   }
 
   .post-box:nth-child(-2n+2) .post-box-text-container {
-    padding: 12.81% 6.77% 14.71% calc(50% - 765px); 
+    padding: 12.81% 6.77% 14.71% calc(50% - 780px); 
   }
   
   .post-box:nth-child(-3n+3) .post-box-text-container {
-    padding: 12.81% calc(50% - 765px) 11.44% 6.77%;    
+    padding: 12.81% calc(50% - 780px) 11.44% 6.77%;    
   }
 
   .post-title-number {
@@ -1010,16 +1024,17 @@ a {
   }
   
    .post-box:nth-child(-n+1) .post-text {
-    margin-top: 5.43%;     
+    margin-top: 5.43%; /* 123-14.4-4.4px */    
   } 
   
    .post-box:nth-child(-2n+2) .post-text {
-    margin-top: 3.29%;    
+    margin-top: 3.29%; /* 82-14.4-4.4px */    
   } 
   
    .post-box:nth-child(-3n+3) .post-text {
-    margin-top: 4.96%;     
+    margin-top: 4.96%; /* 114-14.4-4.4px */    
   } 
   
 }
+
 
