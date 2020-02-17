@@ -753,7 +753,7 @@ a {
 
 @media (min-width: 961px) {
   .top-container {
-    padding: 45px 15px 110px;
+    padding: 45px 15px 108px;
     background: url("https://raw.githubusercontent.com/Antis85/mq-diploma/master/sources/img/football_1920.jpg")
       no-repeat center center #0a0e34;
     background-size: cover;
@@ -764,9 +764,13 @@ a {
     height: 52px;
   }
 
+  .header-slogan-text {
+    line-height: 1;
+  }
+  
   .header-slogan-top {
     font-size: 90px;
-    margin-top: 280px;
+    margin-top: 281px;
   }
 
   .header-slogan-bottom {
@@ -775,7 +779,7 @@ a {
   }
 
   .download-buttons-list {
-    margin-top: 207px;
+    margin-top: 213px;
     display: flex;
     justify-content: center;
   }
@@ -808,11 +812,11 @@ a {
 
   .cards-container-title {
     font-size: 80px;
-    padding: 102px 15px 35px calc(50% + 50px);
+    padding: 88px 15px 35px calc(50% + 50px);
   }
 
   .title-players {
-    padding: 104px 15px 35px 15px;
+    padding: 89px 15px 35px 15px;
   }
 
   .picture-athletes {
@@ -822,35 +826,32 @@ a {
 
   .picture-players {
     right: 0px;
-    top: 45px;
+    top: 24px;
   }
 
   .top-card {
-    padding: 54px 15px 56px calc(50% + 50px);
+    padding: 39px 15px 56px calc(50% + 50px);
     background-color: #ffffff;
   }
 
   .top-card-players {
-    padding-left: 15px;
-    padding-right: 50%;
+    padding: 39px 50% 56px 15px;
   }
 
   .middle-card {
-    padding: 54px 15px 56px calc(50% + 50px);
+    padding: 50px 15px 61px calc(50% + 50px);
   }
 
   .middle-card-players {
-    padding-left: 15px;
-    padding-right: 50%;
+    padding: 50px 50% 61px 15px;
   }
 
   .bottom-card {
-    padding: 54px 15px 56px calc(50% + 50px);
+    padding: 50px 15px 56px calc(50% + 50px);
   }
 
   .bottom-card-players {
-    padding-left: 15px;
-    padding-right: 50%;
+    padding: 50px 50% 56px 15px;
   }
 
   .card-title-number {
@@ -887,27 +888,27 @@ a {
     order: 1;
   }
 
-  .post-box-text-container {    
+  .post-box-text-container {
     width: 50%;
   }
 
- .post-box:nth-child(-n+1) .post-box-text-container {
-    padding: calc(12.81%/2) 15px calc(12.58%/2) 58px;    
+  .post-box:nth-child(-n + 1) .post-box-text-container {
+    padding: calc(12.81% / 2) 15px calc(12.58% / 2) 58px;
   }
 
-  .post-box:nth-child(-2n+2) .post-box-text-container {
-    padding: calc(12.81%/2) calc(6.77%/2) calc(14.71%/2) 15px; 
+  .post-box:nth-child(-2n + 2) .post-box-text-container {
+    padding: calc(12.81% / 2) calc(6.77% / 2) calc(14.71% / 2) 15px;
   }
-  
-  .post-box:nth-child(-3n+3) .post-box-text-container {
-    padding: calc(12.81%/2) 15px calc(11.44%/2) 58px;    
+
+  .post-box:nth-child(-3n + 3) .post-box-text-container {
+    padding: calc(12.81% / 2) 15px calc(11.44% / 2) 58px;
   }
 
   .post-title-number {
     width: 116px;
     height: 116px;
     font-size: 24px;
-    top: calc(12.81%/2 + 0.75em);
+    top: calc(12.81% / 2 + 0.75em);
     left: -58px;
   }
 
@@ -930,18 +931,18 @@ a {
   .post-text {
     font-size: 24px;
   }
-  
-     .post-box:nth-child(-n+1) .post-text {
-    margin-top: calc(5.43%/2);     
-  } 
-  
-   .post-box:nth-child(-2n+2) .post-text {
-    margin-top: calc(3.29%/2);    
-  } 
-  
-   .post-box:nth-child(-3n+3) .post-text {
-    margin-top: calc(4.96%/2);     
-  } 
+
+  .post-box:nth-child(-n + 1) .post-text {
+    margin-top: calc(5.43% / 2);
+  }
+
+  .post-box:nth-child(-2n + 2) .post-text {
+    margin-top: calc(3.29% / 2);
+  }
+
+  .post-box:nth-child(-3n + 3) .post-text {
+    margin-top: calc(4.96% / 2);
+  }
 
   .footer-container {
     padding: 220px 15px 50px;
@@ -977,7 +978,7 @@ a {
   }
 
   .footer-slogan-bottom {
-    font-size: 36px;
+    font-size: 30px;
     text-align: left;
   }
 
@@ -990,7 +991,8 @@ a {
     height: 52px;
     padding-top: 260px;
   }
-} 
+}
+
 
 @media (min-width: 1600px) {
   
